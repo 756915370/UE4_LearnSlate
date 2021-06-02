@@ -13,7 +13,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SlateLearning", "Intermedia
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Visualizers", "Visualizers", "{1CCEC849-CC72-4C59-8C36-2F7C38706D4C}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\App\UE_4.26\Engine\Extras\VisualStudioDebugging\UE4.natvis = ..\..\App\UE_4.26\Engine\Extras\VisualStudioDebugging\UE4.natvis
+		D:\Unreal\App\UE_4.26\Engine\Extras\VisualStudioDebugging\UE4.natvis = D:\Unreal\App\UE_4.26\Engine\Extras\VisualStudioDebugging\UE4.natvis
 	EndProjectSection
 EndProject
 Global
