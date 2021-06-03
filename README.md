@@ -13,7 +13,7 @@ Slate是什么？Slate是UE4的底层UI框架。我们经常使用的UMG和UE4�
 HUD类也是用来画UI的，但是现在有UMG的存在，HUD类很少用到了。根据[官方文档](https://docs.unrealengine.com/4.26/en-US/InteractiveExperiences/Framework/UIAndHUD/)所说，在多人分屏游戏里，每个玩家共享一个屏幕但是有各自的UI，这种时候可以使用HUD类。这个教程中我们在HUD类里来画Slate控件。
 **通过在Setting里可以看到我们当前使用的HUD类**。  
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210603162009654.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2o3NTY5MTUzNzA=,size_16,color_FFFFFF,t_70#pic_center)  
-首先我们创建自己的HUD类AMainMenuHud。
+首先我们创建自己的HUD类AMainMenuHud。  
 里面有：
 
 - 一个初始化函数。初始化要做的事情后面会讲。
@@ -36,9 +36,9 @@ SWidget是所有Slate控件的基类。
 - **SPanel可以放多个子控件。**
 
 UE4编辑器下提供了创建SCompoundWidget子类的入口。这里我们使用SCompoundWidget来绘制我们的按钮和文字。**注意创建了以后在UE4编辑器下是看不到你建的类的，只能在C++工程里看到。**
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2021060316453987.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2o3NTY5MTUzNzA=,size_16,color_FFFFFF,t_70#pic_center)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2021060316453987.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2o3NTY5MTUzNzA=,size_16,color_FFFFFF,t_70#pic_center)  
 接着我们创建自己的SCompoundWidget类叫**MainMenuWidget。**
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210603172223952.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2o3NTY5MTUzNzA=,size_16,color_FFFFFF,t_70#pic_center)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210603172223952.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2o3NTY5MTUzNzA=,size_16,color_FFFFFF,t_70#pic_center)  
 里面有：
 
 - 三个宏**SLATE_BEGIN_ARGS**、**SLATE_END_ARGS()**这两个是自带的。**SLATE_ARGUMENT**我们自己添加，作用是指明构造时需要的参数。这里写的**MainMenuHud**变量实际上没有用到。只是为了展示如何构造时传入参数。写法上要注意不能写在{}里面不然会编译不过。
