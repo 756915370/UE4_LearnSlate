@@ -7,7 +7,6 @@
 BEGIN_SLATE_FUNCTION_BUILD_OPTIMIZATION
 void SMainMenuWidget::Construct(const FArguments& InArgs)
 {
-	
 	ChildSlot
 	[
 		// Populate the widget

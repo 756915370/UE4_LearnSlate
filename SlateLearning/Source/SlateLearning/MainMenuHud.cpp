@@ -5,6 +5,7 @@
 
 void AMainMenuHud::PostInitializeComponents()
 {
+	Super::PostInitializeComponents();
 	//TSharedRef必须在定义的时候就赋值，这样写OK
 	//TSharedRef<SMainMenuWidget> MainMenuWidget = SNew(SMainMenuWidget).MainMenuHud(this);
 

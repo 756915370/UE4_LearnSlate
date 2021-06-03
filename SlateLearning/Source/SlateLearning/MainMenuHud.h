@@ -17,12 +17,4 @@ class SLATELEARNING_API AMainMenuHud : public AHUD
 	virtual void PostInitializeComponents() override;
 
     TSharedPtr<class SMainMenuWidget> MainMenuWidget;
-public:
-    // Called by SMainMenu whenever the Play Game! button has been clicked.
-    UFUNCTION(BlueprintImplementableEvent, Category = "Menus|Main Menu")
-        void PlayGameClicked();
-
-    // Called by SMainMenu whenever the Quit Game button has been clicked.
-    UFUNCTION(BlueprintImplementableEvent, Category = "Menus|Main Menu")
-        void QuitGameClicked();
 };
