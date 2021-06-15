@@ -1,4 +1,4 @@
-# UE4_LearnSlate
+# 【UE·UI篇】Slate教程——制作简单的按钮和文字
 Slate是什么？Slate是UE4的底层UI框架。我们经常使用的UMG和UE4编辑器的各个界面底层都是Slate。
 关于Slate的教程，大都是把[**Unreal Engine 4: Slate UI Tutorial 1 - HUD initialization and first widget**](http://students.ceid.upatras.gr/~vpapadatos/UE4cpp_slate_1.html)系列文章翻译成中文。对于里面的细节没有进行详细的描述。所以我重新写了这篇文章。  
 **实现功能和代码和这篇文章大致相同**，不过我会讲得更加细致，对于新人更加友好。[github工程点这里](https://github.com/756915370/UE4_LearnSlate)。
